@@ -15,14 +15,12 @@ public class Airplane {
         this.fuel = 0;
     }
 
-    public void info(){
-        System.out.printf("Изготовитель: %s, год выпуска: %s, длина: %s, вес: %s, количество топлива в баке: %s",
-            producer, year, length, weigt, fuel);
-    }
-
-    public void fillUp(int fuel){
-        if(fuel > 0)
-            this.fuel += fuel;
+    public static void compareAirplanesfo(Airplane air1, Airplane air2){
+        String compareResult = air1.length == air2.length ? "==" : air1.length > air2.length ? ">" : "<";
+        System.out.printf("Длина самолета %s %s длина самолета %s",
+            air1.producer,
+            compareResult,
+            air2.producer);
     }
 
     public String getProducer() {
