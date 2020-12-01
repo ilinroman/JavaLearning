@@ -1,4 +1,4 @@
-package Day14;
+package main.java.day14;
 
 class CustomException extends Exception {
 }

@@ -1,4 +1,4 @@
-package Day6;
+package day6;
 
 public class Airplane {
     private String producer;

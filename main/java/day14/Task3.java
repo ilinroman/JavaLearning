@@ -1,4 +1,4 @@
-package Day14;
+package main.java.day14;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -25,8 +25,15 @@ public class Task3 {
             throw new CustomException();
 
         List<Person> str = new ArrayList<>();
+        String[] buffer = new String[2];
         do {
-            str.add(new Person(scanner.nextLine().split(" ")));
+            buffer = scanner.nextLine().split(" ");
+            int age = Integer.parseInt(buffer[1]);
+
+            if (age < 0)
+                throw new CustomException();
+
+            str.add(new Person(buffer[0], age));
         } while (scanner.hasNextLine());
 
         return str;

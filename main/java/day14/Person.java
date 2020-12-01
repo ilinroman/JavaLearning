@@ -1,10 +1,10 @@
-package Day14;
+package main.java.day14;
 
 class Person {
     String name;
     int year;
 
-    public Person(String[] str) {
+    public Person (String[] str) {
         this.name = str[0];
         this.year = Integer.parseInt(str[1]);
     }

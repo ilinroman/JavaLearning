@@ -1,4 +1,4 @@
-package Day6;
+package day5;
 
 public class Motorbike {
     private int year;
@@ -23,11 +23,4 @@ public class Motorbike {
         return model;
     }
 
-    public void info(){
-        System.out.println("Это мото");
-    }
-
-    public int yearDifference(int year){
-        return (year - this.year);
-    }
 }
