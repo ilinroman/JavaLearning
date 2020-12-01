@@ -26,6 +26,7 @@ public class Task1 {
             return;
 
         String[] numsString = scanner.nextLine().split(";");
+        scanner.close();
 
         if (numsString.length != 10) throw new CustomException();
 

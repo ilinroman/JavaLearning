@@ -36,6 +36,8 @@ public class Task3 {
             str.add(new Person(buffer[0], age));
         } while (scanner.hasNextLine());
 
+        scanner.close();
+
         return str;
     }
 }

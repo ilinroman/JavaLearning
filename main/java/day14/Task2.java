@@ -29,6 +29,8 @@ public class Task2 {
             str.add(scanner.nextLine());
         } while (scanner.hasNextLine());
 
+        scanner.close();
+
         return str;
     }
 }
