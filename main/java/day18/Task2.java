@@ -10,7 +10,7 @@ public class Task2 {
      * @param num входное число
      * @return результат подсчета
      */
-    private static int count7(long num) {
+    public static int count7(long num) {
         if (num > 0)
             if (num % 10 == 7)
                 return 1 + count7(num / 10);

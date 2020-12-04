@@ -12,7 +12,7 @@ public class Task1 {
      * @param i индекс текущего элемента массива
      * @return сумма
      */
-    private static int recursionSum(int[] nums, int i) {
+    public static int recursionSum(int[] nums, int i) {
         return i < nums.length ? nums[i++] + recursionSum(nums, i) : 0;
     }
 }
